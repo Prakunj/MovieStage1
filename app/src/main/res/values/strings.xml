@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movie Stage1</string>
+
+    <string name="most_popular">Most Popular</string>
+    <string name="highest_rated">Highest Rated</string>
+
+    <string-array name="names">
+
+    <item></item>
+
+    </string-array>
+
+
+    <string name="settings">Settings</string>
+</resources>
