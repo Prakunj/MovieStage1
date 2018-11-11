@@ -8,19 +8,18 @@ import java.util.ArrayList;
 
 public class SectionLoader extends AsyncTaskLoader<ArrayList<Movie>> {
 
-    String mUrl;
+    private String mUrl;
 
     public SectionLoader(Context context, String url){
         super(context);
         this.mUrl = url;
-
     }
+
     protected void onStartLoading(){
         forceLoad();
     }
     @Nullable
     @Override
-
 
     public ArrayList<Movie> loadInBackground() {
 

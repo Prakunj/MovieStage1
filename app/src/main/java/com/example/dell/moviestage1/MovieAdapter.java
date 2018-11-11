@@ -1,6 +1,5 @@
 package com.example.dell.moviestage1;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -47,13 +46,8 @@ public class MovieAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 Intent intent = new Intent(context, MovieDetailActivity.class);
                 intent.putExtra("result", result);
                 context.startActivity(intent);
-
-
             }
         });
-
-
-
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{

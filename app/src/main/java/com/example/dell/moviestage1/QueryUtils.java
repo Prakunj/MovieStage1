@@ -1,7 +1,6 @@
 package com.example.dell.moviestage1;
 
 import android.text.TextUtils;
-import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,7 +19,6 @@ import java.util.ArrayList;
 public class QueryUtils {
     private static final String LOG_TAG = QueryUtils.class.getSimpleName();
 
-
     private QueryUtils() {
     }
 
@@ -36,7 +34,6 @@ public class QueryUtils {
         ArrayList<Movie> movies = extractDataFromStream(jsonResponse);
         return movies;
     }
-
 
     private static URL createUrl(String requestUrl) {
         URL url = null;
@@ -77,7 +74,6 @@ public class QueryUtils {
         }
         return jsonResponse;
     }
-
     private static String readFromStream(InputStream inputStream) throws IOException {
         StringBuilder output = new StringBuilder();
         if (inputStream != null) {
@@ -108,21 +104,16 @@ public class QueryUtils {
                 String poster = object.getString("poster_path");
                 double vote_average = object.getDouble("vote_average");
 
-
                 String synopsis = object.getString("overview");
                 String release_date = object.getString("release_date");
 
                 Movie movie = new Movie(title, release_date, poster, vote_average, synopsis);
                 movieArrayList.add(movie);
-
-
             }
-
         } catch (JSONException e) {
 
         }
         return movieArrayList;
     }
-
 }
 

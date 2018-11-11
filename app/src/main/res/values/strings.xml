@@ -1,14 +1,22 @@
 <resources>
     <string name="app_name">Movie Stage1</string>
 
-    <string name="most_popular">Most Popular</string>
-    <string name="highest_rated">Highest Rated</string>
+    <string name="most_popular_label">Most Popular</string>
+    <string name="most_popular_value" translatable="false">popular</string>
 
-    <string-array name="names">
+    <string name="highest_rated_label">Highest Rated</string>
+    <string name="highest_rated_value" translatable="false">top_rated</string>
 
-    <item></item>
+    <string name="settings_order_by_default">popularity.desc</string>
+    <string name="settings_order_by_key">sort_by</string>
+    <string name="settings_order_by_label">Sort by</string>
 
-    </string-array>
+
+    <string name="no_internet">No Internet Connection</string>
+    <string name="not_known">Not Known</string>
+
+
+
 
 
     <string name="settings">Settings</string>
